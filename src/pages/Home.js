@@ -16,7 +16,7 @@ const HeroContainer = styled.div`
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.text};
   position: relative;
-  margin-top: 30vh;
+  padding-top: 30vh;
 `;
 
 const Title = styled(motion.h1)`
