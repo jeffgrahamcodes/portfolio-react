@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import {
+  FaJs,
+  FaVuejs,
   FaReact,
   FaNodeJs,
   FaPython,
+  FaFlask,
   FaAws,
   FaDocker,
 } from 'react-icons/fa';
@@ -42,10 +45,13 @@ const TechName = styled.p`
 `;
 
 const techStack = [
+  { name: 'AWS', icon: <FaAws /> },
+  { name: 'JavaScript', icon: <FaJs /> },
   { name: 'React', icon: <FaReact /> },
   { name: 'Node.js', icon: <FaNodeJs /> },
+  { name: 'Vue', icon: <FaVuejs /> },
   { name: 'Python', icon: <FaPython /> },
-  { name: 'AWS', icon: <FaAws /> },
+  { name: 'Flask', icon: <FaFlask /> },
   { name: 'Docker', icon: <FaDocker /> },
 ];
 
