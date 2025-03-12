@@ -1,24 +1,27 @@
 import React from 'react';
 import TechStack from '../components/TechStack';
 import Projects from '../components/Projects';
+import DarkModeToggle from '../components/DarkModeToggle';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { GlobalStyles } from '../styles/GlobalStyles';
 
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #1e1e1e, #121212);
-  color: #fff;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
   text-align: center;
+  background: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.text};
+  position: relative;
+  margin-top: 30vh;
 `;
 
 const Title = styled(motion.h1)`
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 `;
 
 const Subtitle = styled(motion.p)`
@@ -35,12 +38,13 @@ const CTA = styled(motion.a)`
   font-weight: bold;
   margin-top: 20px;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
 `;
 
 const Home = () => {
   return (
     <>
+      <GlobalStyles />
+      <DarkModeToggle />
       <HeroContainer>
         <Title
           initial={{ opacity: 0, y: -20 }}
