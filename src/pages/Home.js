@@ -1,6 +1,6 @@
 import React from 'react';
 import TechStack from '../components/TechStack';
-import Projects from '../components/Projects';
+import Projects from '../pages/Projects';
 import DarkModeToggle from '../components/DarkModeToggle';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
