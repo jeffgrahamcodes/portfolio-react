@@ -9,6 +9,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 1rem 2rem;
   background: ${({ theme }) => theme.navBackground};
+  width: 100vw;
 `;
 
 const Navbar = () => {
