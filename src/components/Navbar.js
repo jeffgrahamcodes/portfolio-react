@@ -15,7 +15,7 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <h1>My Portfolio</h1>
+      <h1>Jeff Graham</h1>
       <div>
         <Link to="/">Home</Link> |<Link to="/about"> About</Link> |
         <Link to="/projects"> Projects</Link> |
