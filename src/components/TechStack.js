@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import {
   FaJs,
-  FaVuejs,
   FaReact,
   FaNodeJs,
   FaPython,
@@ -11,8 +10,6 @@ import {
   FaAws,
   FaDocker,
 } from 'react-icons/fa';
-import { AiOutlineKubernetes } from 'react-icons/ai';
-import { DiDjango } from 'react-icons/di';
 
 const TechContainer = styled.div`
   display: flex;
@@ -51,12 +48,9 @@ const techStack = [
   { name: 'JavaScript', icon: <FaJs /> },
   { name: 'React', icon: <FaReact /> },
   { name: 'Node.js', icon: <FaNodeJs /> },
-  { name: 'Vue', icon: <FaVuejs /> },
   { name: 'Python', icon: <FaPython /> },
-  { name: 'Django', icon: <DiDjango /> },
   { name: 'Flask', icon: <FaFlask /> },
   { name: 'Docker', icon: <FaDocker /> },
-  { name: 'Kubernetes', icon: <AiOutlineKubernetes /> },
 ];
 
 const TechStack = () => {
